@@ -173,6 +173,7 @@ class Tokenizer(private val input: String) {
                             "false" -> ensureSetPosition(FalseToken())
                             "if" -> ensureSetPosition(IfToken())
                             "when" -> ensureSetPosition(WhenToken())
+                            "const" -> ensureSetPosition(ConstToken())
                             else -> ensureSetPosition(IdentifierToken(text))
                         }
                     }
